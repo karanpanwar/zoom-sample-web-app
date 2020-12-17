@@ -1,25 +1,26 @@
 ZoomMtg.preLoadWasm(); // pre download wasm file to save time.
 ZoomMtg.prepareJssdk();
 
-const API_KEY = "wjNPCMw_RB6Ewt5ZQXHZig"; //"YOUR_API_KEY"
-const API_SECRET = "xDUMhqk5qVJoo018VL4pdL7fpujhZ7RDE3nw"; //"YOUR_API_SECRET"
-const url = 'https://zoom-k.herokuapp.com/'; // YOUR_FETCH_URL_FOR_GET_SIGNATURE
+const API_KEY = "YOUR_API_KEY"; //"YOUR_API_KEY"
+const API_SECRET = "YOUR_API_SECRET"; //"YOUR_API_SECRET"
+const url = "YOUR_FETCH_URL_FOR_GET_SIGNATURE"; // YOUR_FETCH_URL_FOR_GET_SIGNATURE
 
 /** request body to get signature */
 const requestBody = {
     apiKey: API_KEY,
     apiSecret: API_SECRET,
-    meetingNumber: 3073300639, // HOST_MEETING_NUMBER
+    meetingNumber: 123456789, // "YOUR_HOST_MEETING_NUMBER"
     role: 0, // 1 for host; 0 for attendee,
 };
 
 /** meetconfig to join meeting */
 const meetConfig = {
-    meetingNumber: 3073300639, // should be integer.
+    meetingNumber: 123456789, // "YOUR_HOST_MEETING_NUMBER"
     userName: 'karan panwar',
     passWord: '',
 };
 
+// onclick lister for join button.
 document
     .getElementById("join_meeting")
     .addEventListener("click", function (e) {
