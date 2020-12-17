@@ -1,0 +1,17 @@
+{
+  "name": "websdk-cdn",
+  "version": "1.8.3",
+  "description": "Zoom demo app",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"http-server -a localhost -p 9999 -c-1\""
+  },
+  "author": "Karan Panwar",
+  "license": "ISC"
+}
